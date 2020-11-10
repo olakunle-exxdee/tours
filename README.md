@@ -2,7 +2,7 @@
 
 ![Design preview for the  ##tours homepage](./image/preview.jpg)
 
-#Welcome
+### Welcome
 
 Tours is a clean template for travel agency.
 
