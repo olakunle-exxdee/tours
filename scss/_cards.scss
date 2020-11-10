@@ -1,0 +1,125 @@
+.card:nth-child(1) {
+  background: chartreuse;
+}
+
+.card {
+  position: relative;
+
+  .circle {
+    position: absolute;
+    width: 10px;
+  }
+
+  .circle:nth-child(1) {
+    right: 60px;
+    bottom: 200px;
+  }
+  .circle:nth-child(3) {
+    left: 60px;
+    top: 200px;
+  }
+
+  .wrapper {
+    .lists {
+      margin-bottom: 2rem;
+      .heading {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #202336;
+      }
+      .link {
+        color: #fb8f1d;
+        transition: color 200ms ease;
+        margin-top: 1rem;
+        display: inline-block;
+        &:hover {
+          color: #fb8f1d;
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .card-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      .cards {
+        position: relative;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        transform: scale(1);
+        transition: transform 300ms ease-in-out;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.05);
+        }
+        img {
+          display: block;
+          width: 100%;
+          max-width: 300px;
+          border-radius: 5px;
+          transform: scale(1);
+        }
+        .place {
+          display: block;
+          width: 100%;
+          max-width: 250px;
+          height: 250px;
+          border-radius: 5px;
+        }
+
+        .place-txt {
+          font-family: "Inter", sans-serif;
+          width: 250px;
+          .link {
+            color: #fb8f1d;
+            transition: color 200ms ease;
+            margin-top: 1rem;
+            display: inline-block;
+            &:hover {
+              color: #fb8f1d;
+              opacity: 0.8;
+            }
+          }
+
+          h1 {
+            font-size: 1.3rem;
+            line-height: 1.7;
+            margin-top: 0.5rem;
+          }
+
+          p {
+            line-height: 1.7;
+            letter-spacing: 0.5px;
+            color: #7d7987;
+            margin: 0.5rem 0;
+          }
+        }
+
+        .text {
+          position: absolute;
+          left: 0%;
+          bottom: 0;
+          background: #eee;
+          margin: 0 auto;
+          font-family: "Inter", sans-serif;
+          padding: 1rem 2rem 1rem 0;
+          border-start-end-radius: 5px;
+          font-size: 1.1rem;
+          background: #fff;
+          h3 {
+            color: #042521;
+            font-weight: 700;
+          }
+          p {
+            color: #80918e;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.testimony {
+  .heading {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #202336;
+    margin-bottom: 4rem;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    flex-direction: column;
+
+    .stars {
+      width: 100%;
+      max-width: 400px;
+      .fa-star {
+        color: #ffbb0c;
+        font-size: large;
+      }
+
+      .texting {
+        font-family: "Mulish", sans-serif;
+        font-size: 1.3rem;
+        margin: 2rem 0;
+      }
+
+      .person {
+        p {
+          font-family: "Inter", sans-serif;
+          margin-bottom: 0.5rem;
+        }
+        p:nth-child(1) {
+          font-weight: 700;
+          font-size: 1.3rem;
+        }
+        p:nth-child(2) {
+          font-size: 1rem;
+          font-weight: 300;
+        }
+      }
+    }
+
+    .person-image {
+      position: relative;
+      img {
+        position: relative;
+        display: block;
+        border-radius: 5px;
+        max-width: 400px;
+        transition: 300ms ease;
+      }
+      .plus {
+        position: absolute;
+        width: 20px;
+      }
+      .plus:nth-child(1) {
+        right: -10px;
+        top: -10px;
+      }
+
+      .plus:nth-child(2) {
+        left: -10px;
+        bottom: -10px;
+      }
+      .arrow {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        border-top-left-radius: 5px;
+        i + i {
+          margin-left: 4rem;
+        }
+
+        i {
+          display: block;
+          font-size: 2rem;
+          color: #666;
+          cursor: pointer;
+          &:hover {
+            color: #d5d5d5;
+          }
+        }
+      }
+    }
+  }
+}

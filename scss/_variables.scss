@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Mulish:wght@200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+.e {
+  font-family: "Inter", sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-family: "Playfair Display", serif;
+}
+
+$orange: #fb8f1d;
+$black: #202336;
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgba(32, 218, 153, 0.056);
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 50em) {
+    @content;
+  }
+}

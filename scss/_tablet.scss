@@ -1,0 +1,227 @@
+@include tablet {
+  // header
+
+  .header {
+    // navbar
+    margin-top: 1em;
+
+    .navbar {
+      @include flex;
+      justify-content: space-between;
+      align-items: center;
+      .section1 {
+        @include flex;
+        justify-content: space-between;
+        flex-basis: 50%;
+        margin-top: 2em;
+        .logo {
+          z-index: 10;
+        }
+
+        .hamburger {
+          display: none;
+        }
+      }
+
+      .section2 {
+        position: relative;
+        background: transparent;
+        width: 100%;
+        height: 20px;
+        transform: translateX(0%);
+        transition: transform 200ms ease-in;
+
+        .list {
+          font-size: 1.4rem;
+          @include flex;
+          justify-content: center;
+          flex-direction: row;
+        }
+        .item {
+          padding: 0 1em;
+        }
+        .btns__item {
+          padding: 0 1em;
+        }
+        .link {
+          color: #b8becd;
+          transition: color 200ms ease-in;
+
+          &:hover,
+          &:focus {
+            color: #202336;
+            transition: color 200ms ease;
+          }
+        }
+
+        .login {
+          border: 2px solid #fb8f1d;
+          padding: 0.5em 2em;
+          display: inline-block;
+          color: #fb8f1d;
+
+          transition: all 200ms ease-in;
+          &:hover {
+            background: #fb8f1d;
+            color: #fff;
+            transition: all 200ms ease-in;
+          }
+        }
+        .register {
+          padding: 0.5em 1.75em;
+          color: #fff;
+          background: #fb8f1d;
+          transition: all 200ms ease-in;
+          &:hover {
+            background: transparent;
+            color: #fb8f1d;
+            transition: all 200ms ease-in;
+          }
+        }
+      }
+    }
+
+    .hero {
+      flex-direction: row-reverse;
+      align-items: stretch;
+      margin-top: 4rem;
+      .image {
+        max-width: 400px;
+        margin-bottom: 0;
+      }
+
+      .content {
+        .title {
+          font-size: 5rem;
+          max-width: 400px;
+        }
+
+        .form {
+          font-family: "Inter", sans-serif;
+          h4 {
+            margin-top: 2rem;
+          }
+          span {
+            margin: 1rem 0 2rem 0;
+          }
+        }
+      }
+    }
+  }
+
+  .world {
+    .wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      .content-image {
+        margin-bottom: 0;
+      }
+      .content-text {
+        .heading {
+          font-size: 3rem;
+          max-width: 400px;
+        }
+        .text {
+          max-width: 400px;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
+  .card {
+    .wrapper {
+      .lists {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .heading {
+          font-size: 3rem;
+          margin-top: 0;
+        }
+        .link {
+          font-size: 1.2rem;
+        }
+      }
+
+      .card-content {
+        justify-content: space-between;
+
+        .cards {
+          position: relative;
+          margin-bottom: 0;
+          margin-left: 0;
+          img {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            border-radius: 5px;
+          }
+
+          .text {
+            position: absolute;
+            left: 0%;
+            bottom: 0;
+            background: #eee;
+            margin: 0 auto;
+            font-family: "Inter", sans-serif;
+            padding: 1rem 2rem 1rem 0;
+            border-start-end-radius: 5px;
+            font-size: 1.1rem;
+            background: #fff;
+            h3 {
+              color: #042521;
+              font-weight: 700;
+            }
+            p {
+              color: #80918e;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+  .testimony {
+    .heading {
+      font-size: 4rem;
+    }
+    .wrapper {
+      flex-direction: row;
+
+      .stars + .person-image {
+        margin-left: 30rem;
+      }
+      .stars {
+        width: 100%;
+        max-width: 400px;
+        .fa-star {
+          color: #ffbb0c;
+          font-size: large;
+        }
+
+        .text {
+          font-family: "Mulish", sans-serif;
+          font-size: 1.5rem;
+          margin: 2rem 0;
+        }
+
+        .person {
+          p:nth-child(1) {
+            font-size: 1.5rem;
+          }
+          p:nth-child(2) {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .person-image {
+        img {
+          width: 100%;
+          // max-width: 400px;
+        }
+      }
+    }
+  }
+}
