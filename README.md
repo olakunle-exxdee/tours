@@ -9,8 +9,9 @@ Tours is a clean template for travel agency.
 Built using HTML, SCSS and Javascript.
 
 Fonts Used
-Inter
-Mulish
-Playfair Display
+
+- Inter
+- Mulish
+- Playfair Display
 
 Live Url = https://toursandtravels.netlify.app
