@@ -4,7 +4,7 @@
 
 #Welcome
 
-Tours is a clean template for trabel agency.
+Tours is a clean template for travel agency.
 
 Built using HTML, CSS and Javascript.
 
