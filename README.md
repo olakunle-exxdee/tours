@@ -6,7 +6,7 @@
 
 Tours is a clean template for travel agency.
 
-Built using HTML, CSS and Javascript.
+Built using HTML, SCSS and Javascript.
 
 Fonts Used
 Inter
