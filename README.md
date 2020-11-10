@@ -1,3 +1,3 @@
 # TOURS homepage
 
-(./image/preview.jpg)
+![Design preview for the  ##tours homepage](./image/preview.jpg)
